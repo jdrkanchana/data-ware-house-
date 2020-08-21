@@ -1,0 +1,8 @@
+Create table DimCustomer
+(
+CustomerID int not null auto_increment,
+CustomerAltID varchar(10) not null,
+CustomerName varchar(50),
+Gender varchar(20),
+primary key (CustomerID)
+);
