@@ -35,8 +35,10 @@ CREATE TABLE DimDate
 		FirstDayOfYear DATE,
 		LastDayOfYear DATE,
 		/* if weekend then 0, else if weekday then1*/
-		
+		IsWeekday BIT,
+		/* Can name a holiday in UK*/
 		HolidayUK VARCHAR(50) Null,
-	
+		/* if nationalholiday then 1 if not national holiday then 0*/
+		IsHolidayUK BIT Null,
 		PRIMARY KEY (DateKey)
 	);
